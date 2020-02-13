@@ -9,8 +9,6 @@ const debug = require('debug')('newgoesportapi:server');
 const http = require('http');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
-const fichesPaysRouter = require('./routes/fichesPays');
-const tripsRouter = require('./routes/trips');
 const { apiPort, apiPortSsl } = require('./config');
 
 const app = express();
@@ -48,8 +46,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(__dirname + '/public/apidoc'));
 app.use('/auth', authRouter);
 app.use('/users', passport.authenticate('jwt', { session: false }), usersRouter);
-app.use('/fichesPays', passport.authenticate('jwt', { session: false }), fichesPaysRouter);
-app.use('/trips', passport.authenticate('jwt', { session: false }), tripsRouter);
 
 const server = http.createServer(app);
 
