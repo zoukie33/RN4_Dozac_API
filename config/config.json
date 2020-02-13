@@ -1,0 +1,44 @@
+{
+  "development": {
+    "username": "zoukie",
+    "password": "",
+    "database": "db_rn4_dozac_dev",
+    "host": "164.132.192.20",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "port": 3306
+  },
+  "test": {
+    "username": "zoukie",
+    "password": "",
+    "database": "db_rn4_dozac_test",
+    "host": "164.132.192.20",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "port": 3306
+  },
+  "production": {
+    "username": "zoukie",
+    "password": "",
+    "database": "db_rn4_dozac_prod",
+    "host": "164.132.192.20",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "port": 3306
+  }
+}
