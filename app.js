@@ -44,6 +44,7 @@ app.use(passport.initialize());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(__dirname + '/public/apidoc'));
+app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/auth', authRouter);
 app.use('/users', passport.authenticate('jwt', { session: false }), usersRouter);
 

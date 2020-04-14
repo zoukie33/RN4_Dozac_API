@@ -23,20 +23,15 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         unique: true
       },
-      createdAt: {
-        type: DataTypes.DATE,
+      profPic: {
+        type: DataTypes.STRING(255),
         allowNull: false,
-        defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
-      },
-      updatedAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
+        defaultValue: 'default.png'
       }
     },
     {
       tableName: 'users',
-      timestamps: false
+      timestamps: true
     }
   );
   User.prototype.validPassword = function(password) {

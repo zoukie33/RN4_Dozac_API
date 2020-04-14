@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "zoukie",
-    "password": "",
+    "password": "fnbxfzmxfn33",
     "database": "db_rn4_dozac_dev",
     "host": "164.132.192.20",
     "dialect": "mysql",
@@ -15,7 +15,7 @@
   },
   "test": {
     "username": "zoukie",
-    "password": "",
+    "password": "fnbxfzmxfn33",
     "database": "db_rn4_dozac_test",
     "host": "164.132.192.20",
     "dialect": "mysql",
@@ -29,7 +29,7 @@
   },
   "production": {
     "username": "zoukie",
-    "password": "",
+    "password": "fnbxfzmxfn33",
     "database": "db_rn4_dozac_prod",
     "host": "164.132.192.20",
     "dialect": "mysql",
